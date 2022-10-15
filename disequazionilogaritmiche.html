@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+
+    <Title> Disequazioni Logaritmiche</Title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background-color: rgb(0, 38, 255) ;">
+
+<div style="height: auto;width: auto; align-self:center ; text-align: center; position: relative; top: 400px;" id="Home">
+    <h1 style="color:black; ;" > DISEQUAZIONI LOGARITMICHE </h1>
+
+    <div class="livello" onclick="myOnClick('Home','livelloprincipiante')"> <p>Livello Principiante</p></div>
+   <div class="livello"><p>Livello Facile</p> </div> 
+    <div class="livello"><p >Livello Intermedio</p> </div>
+    <div class="livello"> <p>Livello Difficile</p></div>
+    <div class="livello"><p >Livello Estremo</p> </div>
+
+    
+    
+</div>  
+
+
+
+<div style="display:none;" id="livelloprincipiante">
+<h1>Disequazione Logaritmiche Livello Principiante</h1>
+<img src="disequazioneprincipiante1.png">
+
+
+
+    
+    <div id="caselletimer">
+        <div class="timer"></div>
+        <div class="timer"></div>:
+        <div class="timer"></div>
+        <div class="timer"></div>:
+        <div class="timer"></div>
+        <div class="timer"></div>
+    </div>
+    
+    <div id="mediaplayer">
+        <div><p> </p>
+            <p style="text-align: center;" onclick="myOnClick('livelloprincipiante','Home')">Torna alla Home</p> </div>
+        <div onclick="starttimer()"><img src="play.png"></div>
+        <div onclick="resettimer()"><img src="restart.png"></div>
+    </div>
+    
+    <div id="timerpredefiniti">
+        <div class="predefinito" onclick="impostatimer(0, 0, 10)">
+            <p>10</p>
+            <p>seconds</p>
+        </div>
+        <div class="predefinito" onclick="impostatimer(0, 1, 0)">
+            <p>1</p>
+            <p>minutes</p>
+        </div>
+        <div class="predefinito" onclick="impostatimer(0, 5, 0)">
+            <p>5</p>
+            <p>minutes</p>
+        </div>
+        <div class="predefinito" onclick="impostatimer(0, 30, 0)">
+            <p>30</p>
+            <p>minutes</p>
+        </div>
+        <div class="predefinito" onclick="impostatimer(1, 0, 0)">
+            <p>1</p>
+            <p>hour</p>
+        </div>
+
+
+        <div class="predefinito" onclick="stoptimer(); myOnClick('livelloprincipiante','soluzioneprincipiante');">
+        <b></b>
+        <p>FINITO!</p>
+        </div>
+    </div>
+
+</div>
+<div id="soluzioneprincipiante" style="display:none;">
+    <div >
+    <div style="float:left; margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:0%;  right: 1600px;  max-width:200px; max-height: 100px;" src="disequazioneprincipiante1.png">
+    <p style="position:absolute; right: 1900 px; font-size: 25px;">La nostra disequazione logaritmica non presenta altri logaritmi, non è una frazione percui si passa direttamente al sistema con il campo di esistenza.</p>
+</div>
+    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:10%;  right: 1200px;  max-width:200px ; max-height: 100px; " src="disequazioneprincipiante2.png" ></div>
+    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:20%;  right: 1200px;  max-width:200px ; max-height: 100px;" src="disequazioneprincipiante3.png"></div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
