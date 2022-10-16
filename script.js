@@ -67,7 +67,7 @@ setInterval(function () {
     var timer5 = document.querySelector(".timer:nth-child(5)");
     var timer6 = document.querySelector(".timer:nth-child(6)");
     timer1.innerHTML = oratimer > 9 ? oratimer.toString()[0] : "0";
-    timer2.innerHTML = oratimer < 10 ? oratimer.toString()[0] : oratimer.toString()[1];
+    timer2.innerHTML = oratimer < 10 ? oratimer.toString()[0] : oratimer.toString()[0];
     timer3.innerHTML = minutitimer > 9 ? minutitimer.toString()[0] : "0";
     timer4.innerHTML = minutitimer < 10 ? minutitimer.toString()[0] : minutitimer.toString()[1];
     timer5.innerHTML = seconditimer > 9 ? seconditimer.toString()[0] : "0";

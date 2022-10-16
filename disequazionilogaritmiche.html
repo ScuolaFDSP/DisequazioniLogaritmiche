@@ -12,9 +12,9 @@
     <h1 style="color:black; ;" > DISEQUAZIONI LOGARITMICHE </h1>
 
     <div class="livello" onclick="myOnClick('Home','livelloprincipiante')"> <p>Livello Principiante</p></div>
-   <div class="livello"><p>Livello Facile</p> </div> 
-    <div class="livello"><p >Livello Intermedio</p> </div>
-    <div class="livello"> <p>Livello Difficile</p></div>
+    <div class="livello" onclick="myOnClick('Home','livellofacile')"><p>Livello Facile</p> </div> 
+    <div class="livello" onclick="myOnClick('Home','livellomedio')"><p >Livello Intermedio</p> </div>
+    <div class="livello" onclick="myOnClick('Home','livellodifficile')"> <p>Livello Difficile</p></div>
     <div class="livello"><p >Livello Estremo</p> </div>
 
     
@@ -81,18 +81,227 @@
     <div style="float:left; margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:0%;  right: 1600px;  max-width:200px; max-height: 100px;" src="disequazioneprincipiante1.png">
     <p style="position:absolute; right: 1900 px; font-size: 25px;">La nostra disequazione logaritmica non presenta altri logaritmi, non è una frazione percui si passa direttamente al sistema con il campo di esistenza.</p>
 </div>
-    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:10%;  right: 1200px;  max-width:200px ; max-height: 100px; " src="disequazioneprincipiante2.png" ></div>
-    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:20%;  right: 1200px;  max-width:200px ; max-height: 100px;" src="disequazioneprincipiante3.png"></div>
+    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:10%;  right: 1400px;  max-width:210px ; max-height: 110px; " src="disequazioneprincipiante2.png" ></div>
+    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:20%;  right: 1400px;  max-width:210px ; max-height: 110px;" src="disequazioneprincipiante3.png"></div>
+    <div><img style="position: absolute; top:40%; right: 1200px;  max-width:400px ; max-height: 200px;" src="disequazioneprincipiante4.png"></div>
+    <div><img style="position: absolute; top:60%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazioneprincipiante5.png"></div>
 </div>
 
-
-
-
-
-
-
-
 </div>
+
+<div style="display:none;" id="livellofacile">
+<h1>Disequazione Logaritmiche Livello Facile</h1>
+<img style="height: 300px; width: 600px;" src="disequazionefacile1.png">
+    
+    
+    
+        
+        <div id="caselletimer">
+            <div class="timer"></div>
+            <div class="timer"></div>:
+            <div class="timer"></div>
+            <div class="timer"></div>:
+            <div class="timer"></div>
+            <div class="timer"></div>
+        </div>
+        
+        <div id="mediaplayer">
+            <div><p> </p>
+                <p style="text-align: center;" onclick="myOnClick('livellofacile','Home')">Torna alla Home</p> </div>
+            <div onclick="starttimer()"><img src="play.png"></div>
+            <div onclick="resettimer()"><img src="restart.png"></div>
+        </div>
+        
+        <div id="timerpredefiniti">
+            <div class="predefinito" onclick="impostatimer(0, 0, 10)">
+                <p>10</p>
+                <p>seconds</p>
+            </div>
+            <div class="predefinito" onclick="impostatimer(0, 1, 0)">
+                <p>1</p>
+                <p>minutes</p>
+            </div>
+            <div class="predefinito" onclick="impostatimer(0, 5, 0)">
+                <p>5</p>
+                <p>minutes</p>
+            </div>
+            <div class="predefinito" onclick="impostatimer(0, 30, 0)">
+                <p>30</p>
+                <p>minutes</p>
+            </div>
+            <div class="predefinito" onclick="impostatimer(1, 0, 0)">
+                <p>1</p>
+                <p>hour</p>
+            </div>
+    
+    
+            <div class="predefinito" onclick="stoptimer(); myOnClick('livellofacile','soluzionefacile');">
+            <b></b>
+            <p>FINITO!</p>
+            </div>
+        </div>
+    
+    
+</div>   
+<div id="soluzionefacile" style="display:none;">
+        
+        <div style="float:left; margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:0%;  right: 1600px;  max-width:200px; max-height: 100px;" src="disequazionefacile1.png">
+        <p style="position:absolute; right: 1900 px; font-size: 25px;">ciaoooooooo</p>
+    </div>
+        <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:10%;  right: 1400px;  max-width:210px ; max-height: 110px; " src="disequazionifacile2.png" ></div>
+        <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:20%;  right: 1400px;  max-width:210px ; max-height: 110px;" src="disequazionifacile3.png"></div>
+        <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:30%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazionifacile4.png"></div>
+        <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:50%; right: 1200px;  max-width:400px ; max-height: 200px;" src="disequazionifacile5.png"></div>
+        <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:70%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazionifacile6.png"></div>
+</div>    
+
+<div style="display:none;" id="livellomedio">
+    <h1>Disequazione Logaritmiche Livello Intermedio</h1>
+        <img src="disequazionimedie1.png">
+        
+        
+        
+            
+            <div id="caselletimer">
+                <div class="timer"></div>
+                <div class="timer"></div>:
+                <div class="timer"></div>
+                <div class="timer"></div>:
+                <div class="timer"></div>
+                <div class="timer"></div>
+            </div>
+            
+            <div id="mediaplayer">
+                <div><p> </p>
+                    <p style="text-align: center;" onclick="myOnClick('livellomedio','Home')">Torna alla Home</p> </div>
+                <div onclick="starttimer()"><img src="play.png"></div>
+                <div onclick="resettimer()"><img src="restart.png"></div>
+            </div>
+            
+            <div id="timerpredefiniti">
+                <div class="predefinito" onclick="impostatimer(0, 0, 10)">
+                    <p>10</p>
+                    <p>seconds</p>
+                </div>
+                <div class="predefinito" onclick="impostatimer(0, 1, 0)">
+                    <p>1</p>
+                    <p>minutes</p>
+                </div>
+                <div class="predefinito" onclick="impostatimer(0, 5, 0)">
+                    <p>5</p>
+                    <p>minutes</p>
+                </div>
+                <div class="predefinito" onclick="impostatimer(0, 30, 0)">
+                    <p>30</p>
+                    <p>minutes</p>
+                </div>
+                <div class="predefinito" onclick="impostatimer(1, 0, 0)">
+                    <p>1</p>
+                    <p>hour</p>
+                </div>
+        
+        
+                <div class="predefinito" onclick="stoptimer(); myOnClick('livellomedio','soluzionemedio');">
+                <b></b>
+                <p>FINITO!</p>
+                </div>
+            </div>
+        
+</div>
+        
+        
+        
+     
+    <div id="soluzionemedio" style="display:none;">
+     
+            <div style="float:left; margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:0%;  right: 1600px;  max-width:200px; max-height: 100px;" src="disequazionimedie1.png">
+            <p style="position:absolute; right: 1900 px; font-size: 25px;">medioo</p>
+        </div>
+            <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:10%;  right: 1400px;  max-width:210px ; max-height: 110px; " src="disequazionimedie2.png" ></div>
+            <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:20%;  right: 1400px;  max-width:210px ; max-height: 110px;" src="disequazionimedie3.png"></div>
+            <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:30%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disuequazionimedie4.png"></div>
+            <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:50%; right: 1200px;  max-width:400px ; max-height: 200px;" src="disequazionimedie5.png"></div>
+            <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:70%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazionimedie6.png"></div>
+            <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:80%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazionimedie7.png"></div>
+            <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:90%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazionimedie8.png"></div>
+            <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:100%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazionimedie9.png"></div>
+        </div>    
+    </div>
+
+
+        <div style="display:none;" id="livellodifficile">
+            <h1>Disequazione Logaritmiche Livello Intermedio</h1>
+                <img style="max-width:200px; max-height: 100px;" src="disequazionimedie1.png">
+                
+                
+                
+                    
+                    <div id="caselletimer">
+                        <div class="timer"></div>
+                        <div class="timer"></div>:
+                        <div class="timer"></div>
+                        <div class="timer"></div>:
+                        <div class="timer"></div>
+                        <div class="timer"></div>
+                    </div>
+                    
+                    <div id="mediaplayer">
+                        <div><p> </p>
+                            <p style="text-align: center;" onclick="myOnClick('livellodifficile','Home')">Torna alla Home</p> </div>
+                        <div onclick="starttimer()"><img src="play.png"></div>
+                        <div onclick="resettimer()"><img src="restart.png"></div>
+                    </div>
+                    
+                    <div id="timerpredefiniti">
+                        <div class="predefinito" onclick="impostatimer(0, 0, 10)">
+                            <p>10</p>
+                            <p>seconds</p>
+                        </div>
+                        <div class="predefinito" onclick="impostatimer(0, 1, 0)">
+                            <p>1</p>
+                            <p>minutes</p>
+                        </div>
+                        <div class="predefinito" onclick="impostatimer(0, 5, 0)">
+                            <p>5</p>
+                            <p>minutes</p>
+                        </div>
+                        <div class="predefinito" onclick="impostatimer(0, 30, 0)">
+                            <p>30</p>
+                            <p>minutes</p>
+                        </div>
+                        <div class="predefinito" onclick="impostatimer(1, 0, 0)">
+                            <p>1</p>
+                            <p>hour</p>
+                        </div>
+                
+                
+                        <div class="predefinito" onclick="stoptimer(); myOnClick('livellodifficile','soluzionedifficile');">
+                        <b></b>
+                        <p>FINITO!</p>
+                        </div>
+                    </div>
+                
+        </div>
+                
+                
+                
+             
+            <div id="soluzionedifficile" style="display:none;">
+             
+                    <div style="float:left; margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:0%;  right: 1600px;  max-width:200px; max-height: 100px;" src="disequazionimedie1.png">
+                    <p style="position:absolute; right: 1900 px; font-size: 25px;">difficile</p>
+                </div>
+                    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:10%;  right: 1400px;  max-width:210px ; max-height: 110px; " src="disequazionimedie2.png" ></div>
+                    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:20%;  right: 1400px;  max-width:210px ; max-height: 110px;" src="disequazionimedie3.png"></div>
+                    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:30%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disuequazionimedie4.png"></div>
+                    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:50%; right: 1200px;  max-width:400px ; max-height: 200px;" src="disequazionimedie5.png"></div>
+                    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:70%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazionimedie6.png"></div>
+                    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:80%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazionimedie7.png"></div>
+                    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:90%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazionimedie8.png"></div>
+                    <div style="float:left;margin: 10px; height: 300; width: 300;"><img style="position: absolute; top:100%; right: 1450px;  max-width:200px ; max-height: 100px;" src="disequazionimedie9.png"></div>
+                </div>
+
+
 
 
 
